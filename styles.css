@@ -1,59 +1,98 @@
-body{
-    color: white;
-    background: rgb(108, 9, 189);
+:root {
+    --fundo: rgb(156, 86, 212);
+    --contrafundo: rgb(14, 22, 22);
+    --off: rgb(117, 153, 141);
+}
+
+/* BASE */
+body {
+    background: var(--fundo);
     border-left: solid 1px;
     margin: 0px;
     font-family: "Arima", system-ui;
 }
 
-header{
-    border-bottom: solid 2px rgb(55, 227, 240);
+header {
+    border-bottom: solid 2px rgb(169, 240, 55);
     padding: 10px;
-    font-size: 30px;
-    color: rgb(55, 227, 240);
+    font-size: 60px;
+    text-align: center;
+    color: var(--contrafundo);
 }
 
-section{
-    background: rgb(33, 121, 91);
+section {
+    background: var(--off);
     padding-left: 80px;
     padding-right: 80px;
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-top: 10px;
     display: block;
-    justify-content: center;
+    text-align: center;
+    border: solid 5px white;
 }
 
-div{
-    background: rgb(108, 9, 189);
+div {
+    background: var(--fundo);
     border: solid 5px white;
     margin: 10px;
     padding: 20px;
 }
 
-img{
+img {
     height: 200px;
 }
 
-.videos{
+h2{
+    color: var(--contrafundo);
+}
+
+p{
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* CLASSE COMBOS */
+.videoscombos {
     display: flex;
     overflow-x: auto;
     gap: 10px;
 }
 
-.combos{
-    
-}
-
-.videos img{
+.videoscombos img {
     opacity: 0.5;
-    height: 200px;
 }
 
-.videos img:hover{
+.videoscombos img:hover {
     opacity: 1.0;
     border: 2px solid yellow;
 }
 
-.combos h2{
-    color: rgb(55, 227, 240)
+/* CLASSE MINECRAFT */
+.videosmine {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+.videosmine img {
+    opacity: 0.5;
+}
+
+.videosmine img:hover {
+    opacity: 1.0;
+    border: 2px solid yellow;
+}
+
+/* ARTES DOS SEGUIDORES */
+.artesseguidores img{
+    height: 300px;
+}
+
+.artestexto{
+    padding: 0px;
+}
+
+.artes{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
 }
