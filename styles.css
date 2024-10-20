@@ -1,0 +1,59 @@
+body{
+    color: white;
+    background: rgb(108, 9, 189);
+    border-left: solid 1px;
+    margin: 0px;
+    font-family: "Arima", system-ui;
+}
+
+header{
+    border-bottom: solid 2px rgb(55, 227, 240);
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(55, 227, 240);
+}
+
+section{
+    background: rgb(33, 121, 91);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: block;
+    justify-content: center;
+}
+
+div{
+    background: rgb(108, 9, 189);
+    border: solid 5px white;
+    margin: 10px;
+    padding: 20px;
+}
+
+img{
+    height: 200px;
+}
+
+.videos{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.combos{
+    
+}
+
+.videos img{
+    opacity: 0.5;
+    height: 200px;
+}
+
+.videos img:hover{
+    opacity: 1.0;
+    border: 2px solid yellow;
+}
+
+.combos h2{
+    color: rgb(55, 227, 240)
+}
